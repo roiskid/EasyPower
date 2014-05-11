@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Mpower Payment Gateway
-Plugin URL: http://www.savekirk.com/mpower
+Plugin URL: http://rskd.tk/work
 Description: An Mpower Payments gateway for Easy Digital Downloads
 Version: 1.0
-Author: Saviour Kirk Agbenyegah
-Author URI: savekirk@gmail.com
+Author: Sena Quashie
+Author URI: roiskid@gmail.com
 */
 
 //registers the gateway
@@ -28,8 +28,8 @@ add_filter( 'edd_currencies', 'mp_edd_ghana_cedis' );
 
 //add mpower payments logo
 function mp_mpower_payment_logo($icons) {
-	$p_url = plugins_url( '')."/mpowerpayments/mpower.png";
-	$icons[$p_url] = __('Mpower Payments','mp_edd');
+	$p_url = plugins_url( '')."/images/mpower.png";
+	$icons[$p_url] = __('mPower Payments','mp_edd');
 	return $icons;
 }
 add_filter( 'edd_accepted_payment_icons', 'mp_mpower_payment_logo');
